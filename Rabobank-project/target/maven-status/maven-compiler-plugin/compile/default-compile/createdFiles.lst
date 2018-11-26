@@ -1,0 +1,5 @@
+com\rabobank\xml\XMLProcess.class
+com\rabobank\CSVParse.class
+com\rabobank\FailureDescription.class
+com\rabobank\xml\Record.class
+com\rabobank\xml\Records.class
