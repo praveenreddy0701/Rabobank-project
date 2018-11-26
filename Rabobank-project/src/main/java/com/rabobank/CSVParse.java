@@ -33,10 +33,14 @@ public class CSVParse {
 						String endBalance = roundFloatNum(new Float(record[5]));
 						if (!expecEndBalance.equals(endBalance)) {
 							failureReason = FailureDescription.INCORRECT_END_BALANCE.toString();
+							System.out.println("TrasactionID:" + transactionRef + " Description:" + trasctiondec
+									+ " Failure reason:" + failureReason);
 						}
 					}
 					else {
 						failureReason = FailureDescription.NON_UNIQUE_TRANSACTION_REF.toString();
+						System.out.println("TrasactionID:" + transactionRef + " Description:" + trasctiondec
+									+ " Failure reason:" + failureReason);
 					}
 				}
 				catch (NumberFormatException e) {
