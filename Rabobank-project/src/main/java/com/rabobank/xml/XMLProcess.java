@@ -50,6 +50,8 @@ public class XMLProcess {
 						writeOutputFile(writer, transactionRef, failureReason, trasctiondec);
 					} else {
 						failureReason = FailureDescription.NON_UNIQUE_TRANSACTION_REF.toString();
+						System.out.println("TrasactionID:" + transactionRef + " Description:" + trasctiondec
+									+ " Failure reason:" + failureReason);
 						writeOutputFile(writer, transactionRef, failureReason, trasctiondec);
 					}
 				}
